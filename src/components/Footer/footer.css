@@ -1,0 +1,94 @@
+footer{
+   padding: 30px;
+   background: #191A23;
+   border-radius: 15px 15px 0 0;
+   color: #fff;
+}
+footer .footer_header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+footer .footer_header ul{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+footer .footer_header ul a{
+   text-decoration: revert;
+}
+footer .footer_links{
+   display: flex;
+   gap: 10px;
+}
+footer .footer_content{
+   padding: 30px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+   border-bottom: 1px solid #fff;
+}
+footer .footer_content .footer_info{
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding-right: 20px;
+}
+footer .footer_content .footer_info h4{
+   background-color: #BC8FF1;
+   color: #191A23;
+   display: inline-block;
+   width: fit-content;
+   border-radius: 5px;
+   padding: 5px;
+}
+footer .footer_content .footer_sub {
+   flex: 2;
+   background: #292A32;
+   padding: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   border-radius: 15px;
+   width: 100%;
+}
+footer .footer_content .footer_sub :is(input, p){
+   padding: 10px;
+   border-radius: 10px;
+   flex: 1;
+   width: 100%;
+}
+footer .footer_content .footer_sub input{
+   border: 1px solid #fff;
+   background-color: transparent;
+   color: #fff;
+}
+footer .footer_content .footer_sub input::placeholder{
+   color: #fff;
+   font-size: .8rem;
+}
+footer .footer_content .footer_sub p{
+   background: #BC8FF1;
+   color: #191A23;
+   font-weight: 600;
+   font-size: .9rem;
+}
+footer .footer_copy{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   padding-top: 20px;
+   font-size: .8rem;
+}
+@media (max-width: 768px) {
+   footer .footer_content .footer_sub{
+      flex-direction: column;
+   }
+}

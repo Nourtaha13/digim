@@ -1,0 +1,64 @@
+.hero_content{
+   display: flex;
+   align-items: center;
+   padding: 60px 0;
+}
+.hero_content .intro{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   padding-right: 30px;
+   flex: 1;
+}
+.hero_content h1{
+   font-size: 3rem;
+   font-weight: 600;
+}
+.hero_content .hero_logo{
+   padding: 10px;
+   flex: 1;
+}
+.hero_content .hero_logo img{
+   width: 100%;
+   height: 100%;
+}
+.hero_content .info{
+   margin-top: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 10px;
+}
+.hero_content .info p{
+   line-height: 1.2;
+   font-size: 1rem;
+   width: 90%;
+}
+.hero_content button{
+   margin-top: 20px;
+   padding: 20px;
+   border-radius: 10px;
+   background: #000;
+   color: #fff;
+   font-size: 1.2rem;
+}
+.company_logs{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 30px 0;
+   width: 100%;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+@media (max-width: 768px) {
+   .hero_content{
+      flex-direction: column;
+      gap: 10px;
+   }
+   .hero_content .intro{
+      padding: 0;
+   }
+}

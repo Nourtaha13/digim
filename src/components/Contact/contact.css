@@ -1,0 +1,74 @@
+.contact_forms{
+   margin: 30px 0;
+   padding-right: 0;
+   padding: 30px 50px;
+   background-color: #F3F3F3;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   overflow: hidden;
+}
+.contact_forms .form{
+   padding: 10px;
+   width: 500px;
+}
+.contact_forms .form form{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: flex-start;
+   flex-basis: 100%;
+
+}
+.contact_forms .form form > div:not(:first-of-type){
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   width: 100%;
+}
+.contact_forms .form form>div:first-of-type label {
+   margin-left: 10px;
+}
+.contact_forms .form form>div:first-of-type input:last-of-type{
+   margin-left: 30px;
+}
+.contact_forms .form form>div:not(:first-of-type) label{
+   margin-bottom: 10px;
+}
+.contact_forms .form form>div:not(:first-of-type) :is(input, textarea){
+   padding: 20px;
+   border: 1px solid #191A23;
+   border-radius: 15px;
+   font-size: 1.1rem;
+   resize: none;
+}
+.contact_forms .form form>div textarea{
+   min-height: 150px;
+}
+.contact_forms .form form button{
+   display: block;
+   width: 100%;
+   background: #191A23;
+   border-radius: 15px;
+   cursor: pointer;
+   color: #fff;
+   padding: 15px;
+   font-size: 1.1rem;
+}
+.contact_forms .form input[type='radio'] {
+   accent-color: #232323;
+}
+.contact_forms .contact_logo{
+   margin-right: -185px;
+}
+@media (max-width: 800px) {
+   .contact_forms .contact_logo {
+      display: none;
+   }
+   .contact_forms .form{
+      width: 100%;
+   }
+}

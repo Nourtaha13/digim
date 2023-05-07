@@ -1,0 +1,52 @@
+.case{
+   margin-top: 30px;
+}
+.case .case_blocks{
+   width: 100%;
+   background: #191A23;
+   border-radius: 15px;
+   padding: 30px;
+   margin: 60px 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.case .case_block{
+   color: #fff;
+   max-width: 350px;
+   border-right: 1px solid #fff;
+   padding: 0 40px;
+}
+.case .case_block:first-child {
+   padding-left: 0;
+}
+.case .case_block:last-child{
+   border-right: none;
+   padding-right: 0;
+}
+.case .case_block p{
+   margin-bottom: 20px;
+   font-size: 1rem;
+}
+.case .case_block span{
+   color: #C797FF;
+   cursor: pointer;
+}
+@media (max-width: 768px) {
+   .case .case_block:first-child{
+      padding-top: 0;
+   }
+   .case .case_block{
+      border-right: none;
+      padding: 40px 0;
+      border-bottom: 1px solid #fff;
+      max-width: 100%;
+   }
+   .case .case_block:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+   }
+}
