@@ -44,7 +44,13 @@ function Cards() {
 		<div className="team_cards">
 			{data.length > 0 &&
 				data.map((item, i) => (
-					<div className="team_card" key={i}>
+					<div
+						className="team_card"
+						key={i}
+						data-aos="fade-zoom-in"
+						data-aos-easing="ease-in-back"
+						data-aos-delay="300"
+						data-aos-offset="0">
 						<div className="team_card_header">
 							<div>
 								<Image
@@ -54,7 +60,7 @@ function Cards() {
 									height={80}
 								/>
 								<div>
-									<h4>{item.name}</h4>
+									<h2>{item.name}</h2>
 									<p>{item.type}</p>
 								</div>
 							</div>

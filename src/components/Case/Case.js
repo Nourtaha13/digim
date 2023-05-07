@@ -15,20 +15,20 @@ function Case() {
 				text="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
 			/>
 			<div className="case_blocks">
-            {
-               data.length > 0 && (
-                  data.map((text, i ) => (
-                     <div className="case_block" key={i}>
-                        <p>{text}</p>
-                        <span>
-                           Learn more <FiArrowUpRight size={23} />
-                        </span>
-                     </div>
-
-                  ))
-               )
-            }
-				
+				{data.length > 0 &&
+					data.map((text, i) => (
+						<div
+							className="case_block"
+							key={i}
+							data-aos="flip-left"
+							data-aos-easing="ease-out-cubic"
+							data-aos-duration="500">
+							<p>{text}</p>
+							<span>
+								Learn more <FiArrowUpRight size={23} />
+							</span>
+						</div>
+					))}
 			</div>
 		</section>
 	);

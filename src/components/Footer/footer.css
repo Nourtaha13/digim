@@ -39,13 +39,14 @@ footer .footer_content .footer_info{
    gap: 10px;
    padding-right: 20px;
 }
-footer .footer_content .footer_info h4{
+footer .footer_content .footer_info h2{
    background-color: #BC8FF1;
    color: #191A23;
    display: inline-block;
    width: fit-content;
    border-radius: 5px;
    padding: 5px;
+   font-size: 1rem;
 }
 footer .footer_content .footer_sub {
    flex: 2;

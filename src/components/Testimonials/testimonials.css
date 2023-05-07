@@ -42,9 +42,10 @@
 .test_content .swiper .swiper-wrapper .swiper_info{
    margin-left: 50px;
 }
-.test_content .swiper .swiper-wrapper .swiper_info h4{
+.test_content .swiper .swiper-wrapper .swiper_info h2{
    color: #BC8FF1;
    line-height: 1.8;
+   font-size: 1rem;
 }
 .test_content .swiper .swiper-wrapper .swiper_info p{
    font-size: .8rem;

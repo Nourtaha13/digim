@@ -11,10 +11,13 @@ function CompanyLogs() {
 		"/images/company/img6.svg",
 	];
 	return (
-		<div className="company_logs">
+		<div
+			className="company_logs"
+			data-aos="zoom-out"
+			data-aos-duration="500">
 			{images.length > 0 &&
 				images.map((img, i) => (
-						<Image src={img} alt="company" width={100} height={57} key={i} />
+					<Image src={img} alt="company" width={100} height={57} key={i} />
 				))}
 		</div>
 	);

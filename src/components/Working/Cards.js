@@ -39,14 +39,18 @@ function Cards() {
 		<div className="working_cards">
 			{data.length > 0 &&
 				data.map((item, i) => (
-					<div className="working_card" key={i}>
+					<div
+						className="working_card"
+						key={i}
+						data-aos="fade-right"
+						data-aos-duration="300">
 						<div className="working_card_header">
 							<p>
 								<span>{i + 1 < 10 ? `0${i + 1}` : i + 1}</span>
 								{item.name}
 							</p>
 							<span className="plus_btn" onClick={clickHandler}>
-                        +
+								+
 							</span>
 						</div>
 						<div className="working_card_content">

@@ -28,34 +28,28 @@ function Blocks() {
 	];
    return (
 		<div className="services_blocks">
-			{
-				data.length > 0 && (
-					data.map((item, i) => (
-						<div className="services_block" key={i}>
-							<div>
-								<div className="block_title">
-									<p>{item.head}</p>
-									<p>{item.text}</p>
-								</div>
-								<div className="block_more">
-									<i>
-										<BsArrowUpRightCircleFill size={23} />
-									</i>
-									<span>Learn more</span>
-								</div>
+			{data.length > 0 &&
+				data.map((item, i) => (
+					<div
+						className="services_block"
+						key={i}
+						data-aos="fade-left"
+						data-aos-duration="300">
+						<div>
+							<div className="block_title">
+								<p>{item.head}</p>
+								<p>{item.text}</p>
 							</div>
-							<Image
-								src={item.img}
-								alt="block"
-								width={130}
-								height={130}
-							/>
+							<div className="block_more">
+								<i>
+									<BsArrowUpRightCircleFill size={23} />
+								</i>
+								<span>Learn more</span>
+							</div>
 						</div>
-
-					))
-				)
-			}
-			
+						<Image src={item.img} alt="block" width={130} height={130} />
+					</div>
+				))}
 		</div>
 	);
 }

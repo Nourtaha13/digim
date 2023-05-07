@@ -5,16 +5,18 @@ import React, { useState } from "react"
 function Navbar() {
 	const [show, setShow] = useState(false)
 	return (
-		<header>
+		<header data-aos="zoom-in-down">
 			<div className="header_logo">
 				<Image src="/images/logo.svg" alt="logo" width={100} height={50} />
-				<div className="header_menu" onClick={_ => setShow(state => !state)}>
+				<div
+					className="header_menu"
+					onClick={(_) => setShow((state) => !state)}>
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
 			</div>
-			<nav className={show? "header_active" : ""}>
+			<nav className={show ? "header_active" : ""}>
 				<div className="header_nav">
 					<ul>
 						<li>

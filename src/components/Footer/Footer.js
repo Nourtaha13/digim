@@ -11,7 +11,7 @@ import {
 function Footer() {
    return (
 		<section style={{ paddingBottom: "0" }}>
-			<footer>
+			<footer data-aos="zoom-in">
 				<div className="footer_header">
 					<Image
 						src="/images/footer.svg"
@@ -39,20 +39,20 @@ function Footer() {
 						</ul>
 					</div>
 					<div className="footer_links">
-						<a href="#">
+						<a href="https://twitter.com">
 							<AiFillTwitterSquare size={30} />
 						</a>
-						<a href="#">
+						<a href="https://facebook.com">
 							<AiFillFacebook size={30} />
 						</a>
-						<a href="#">
+						<a href="https://linkedin.com">
 							<AiFillLinkedin size={30} />
 						</a>
 					</div>
 				</div>
 				<div className="footer_content">
 					<div className="footer_info">
-						<h4>Contact us:</h4>
+						<h2>Contact us:</h2>
 						<p>
 							Email: <a href="mailto:info@digim.com">info@digim.com</a>
 						</p>

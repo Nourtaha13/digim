@@ -65,10 +65,16 @@
    margin-right: -185px;
 }
 @media (max-width: 800px) {
+   .contact_forms{
+      padding: 10px;
+   }
    .contact_forms .contact_logo {
       display: none;
    }
    .contact_forms .form{
       width: 100%;
    }
+      .contact_forms .form form>div:not(:first-of-type) :is(input, textarea){
+         padding: 10px;
+      }
 }

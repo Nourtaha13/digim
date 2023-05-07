@@ -77,7 +77,7 @@ function Sliders() {
 	return (
 		<>
 			{data.length > 0 && (
-				<div className="test_content">
+				<div className="test_content" data-aos="zoom-in-right">
 					<Swiper
 						modules={[Navigation, Pagination, Scrollbar, A11y]}
 						spaceBetween={30}
@@ -92,7 +92,7 @@ function Sliders() {
 							swiper.params.navigation.nextEl =
 								navigationNextRef.current;
 						}}
-                  loop={true}
+						loop={true}
 						pagination={{ clickable: true }}
 						breakpoints={{
 							0: {
@@ -111,7 +111,7 @@ function Sliders() {
 									<p>{item.comment}</p>
 								</div>
 								<div className="swiper_info">
-									<h4>{item.name}</h4>
+									<h2>{item.name}</h2>
 									<p>{item.type}</p>
 								</div>
 							</SwiperSlide>

@@ -22,6 +22,9 @@
 .team_cards .team_card .team_card_header > div > div{
    align-self: flex-end;
 }
+.team_cards .team_card .team_card_header>div h2{
+   font-size: 1rem;
+}
 .team_cards .team_card .team_card_content{
    max-width: 80%;
    border-top: 1px solid #191A23;
